@@ -15,24 +15,11 @@
 
 body{
   color:white;
-  scroll-behavior:smooth;
   background:black;
+  scroll-behavior:smooth;
 }
 
-#hero{
-  min-height:100vh;
-  padding:100px 20px 40px;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-
-  background:
-  linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)),
-  url('https://images.unsplash.com/photo-1518770660439-4636190af475') no-repeat center/cover;
-}
-
+/* NAVBAR */
 nav{
   position:fixed;
   width:100%;
@@ -62,6 +49,21 @@ nav ul li a{
 
 nav ul li a:hover{
   color:#00f2ff;
+}
+
+/* HERO */
+#hero{
+  min-height:100vh;
+  padding:100px 20px 40px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+
+  background:
+  linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)),
+  url('https://images.unsplash.com/photo-1518770660439-4636190af475') no-repeat center/cover;
 }
 
 .profile{
@@ -106,6 +108,7 @@ p{
   box-shadow:0 0 15px #00f2ff;
 }
 
+/* SECTIONS */
 section{
   padding:60px 15px;
   text-align:center;
@@ -121,6 +124,7 @@ section{
   margin:auto;
 }
 
+/* SKILLS */
 .skills{
   display:flex;
   justify-content:center;
@@ -136,6 +140,34 @@ section{
   font-size:13px;
 }
 
+/* PROJECTS */
+.project-box{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:15px;
+}
+
+.project{
+  background:rgba(255,255,255,0.05);
+  padding:15px;
+  border-radius:15px;
+  max-width:300px;
+  text-align:center;
+  border:1px solid #00f2ff;
+}
+
+.project h3{
+  color:#00f2ff;
+  margin-bottom:10px;
+}
+
+.project p{
+  font-size:13px;
+  margin-bottom:10px;
+}
+
+/* FOOTER */
 footer{
   background:black;
   padding:15px;
@@ -146,22 +178,24 @@ footer{
 
 <body>
 
+<!-- NAV -->
 <nav>
 <ul>
 <li><a href="#about">About</a></li>
 <li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
 </nav>
 
+<!-- HERO -->
 <section id="hero">
 
 <img src="profile.jpeg" class="profile">
 
 <h1>Hello, I'm <span>Anurag Kumar</span></h1>
-<p>BTech Student | Learning Web Developer</p><br>
+<p>BTech Student | Aspiring Software Developer</p><br>
 
-<div>
 <a href="https://instagram.com/kshatriya_anurag_93" class="btn" target="_blank">Instagram</a>
 
 <a href="https://wa.me/919341052934?text=Hello%20Anurag%20I%20saw%20your%20portfolio" class="btn" target="_blank">WhatsApp</a>
@@ -169,21 +203,22 @@ footer{
 <a href="resume.pdf" class="btn" target="_blank">Download Resume</a>
 
 <a href="https://github.com/anuragsinghr928-svg" class="btn" target="_blank">GitHub</a>
-</div>
 
 </section>
 
+<!-- ABOUT -->
 <section id="about">
 <div class="card">
 <h2>About Me</h2>
 <p>
-I am a BTech student and a passionate learner in the field of web development. 
-I enjoy solving problems and building creative and responsive websites using modern technologies. 
-Currently, I am improving my skills in programming, problem-solving, and frontend development to grow as a developer and build impactful projects.
+I am a BTech student passionate about web development and programming. 
+I enjoy solving problems and building responsive websites. 
+Currently improving my skills in coding and development to grow as a software developer.
 </p>
 </div>
 </section>
 
+<!-- SKILLS -->
 <section id="skills">
 <div class="card">
 <h2>Skills</h2>
@@ -197,6 +232,27 @@ Currently, I am improving my skills in programming, problem-solving, and fronten
 </div>
 </section>
 
+<!-- PROJECTS -->
+<section id="projects">
+<div class="card">
+<h2>Projects</h2>
+
+<div class="project-box">
+
+<div class="project">
+<h3>AI Photo Selector</h3>
+<p>
+Developed a system that automatically selects the best photos based on input criteria using logic-based filtering and automation.
+</p>
+<a href="https://github.com/anuragsinghr928-svg" class="btn" target="_blank">View Project</a>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
 <section id="contact">
 <div class="card">
 <h2>Contact</h2>
